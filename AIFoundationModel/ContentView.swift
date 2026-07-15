@@ -59,7 +59,7 @@ struct ContentView: View {
                         let replay = try await session.respond(to: prompt)
                         response = replay.content
                     } catch {
-                        response = "Failed to get response : \(error.localizedDescription)"
+                        response = "Fail to get response : \(error.localizedDescription)"
                     }
                 }
             } label: {
